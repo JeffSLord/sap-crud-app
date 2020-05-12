@@ -1,0 +1,12 @@
+context tables {
+
+    /*@@layout{"layoutInfo":{"x":-334,"y":-163.5}}*/
+    entity students {
+        key ID     : Integer not null;
+            NAME   : String(100);
+            SITE   : String(100);
+            GENDER : String(100);
+            AGE    : String(100);
+            SCORE  : Double;
+    };
+};

@@ -1,0 +1,32 @@
+ID: xsa-crud-app
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: crud_db
+    type: hdb
+    path: crud_db
+    requires:
+      - name: hdi_crud_db
+  - name: crud_node
+    type: nodejs
+    path: crud_node
+    provides:
+      - name: crud_node_api
+        properties:
+          url: '${default-url}'
+    requires:
+      - name: hdi_crud_db
+      - name: myauditlog
+resources:
+  - name: hdi_crud_db
+    parameters:
+      config:
+        schema: CRUD_DB
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
+  - name: myauditlog
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: auditlog
+      service-plan: free
