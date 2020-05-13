@@ -1,6 +1,7 @@
 var express = require("express");
 var hdbext = require("@sap/hdbext");
 var xsenv = require("@sap/xsenv");
+var cds = require('@sap/cds');
 var router = express.Router();
 const services = xsenv.getServices({
 	hanaConfig: {
@@ -46,6 +47,12 @@ router.post('/', (req, res) => {
 			})
 		}
 	})
-})
+});
+
+router.get('/cds', (req, res) => {
+	cds.importEntities([{
+		$entity: "tables.students"
+	}], callback);
+});
 
 module.exports = router;

@@ -1,0 +1,3 @@
+service{
+	"tables.students" as "students";
+}
