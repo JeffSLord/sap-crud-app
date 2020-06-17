@@ -17,6 +17,16 @@ modules:
     requires:
       - name: hdi_crud_db
       - name: myauditlog
+  - name: crud_ui5
+    type: html5
+    path: crud_ui5
+    requires:
+      - name: crud_node_api
+        group: destinations
+        properties:
+          name: node-be
+          url: '~{url}'
+          forwardAuthToken: true
 resources:
   - name: hdi_crud_db
     parameters:

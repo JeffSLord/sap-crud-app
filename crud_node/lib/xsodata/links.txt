@@ -1,0 +1,1 @@
+https://cs.xsa.com:51073/xsodata/odata.xsodata/students?$format=json

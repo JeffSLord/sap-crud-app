@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" controllerName="crud_ui5.crud_ui5.controller.View1" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <Button xmlns="sap.m" text="CREATE" id="button0" press="createFunction"/>
+				    <Button xmlns="sap.m" text="Button" id="button3"/>
+				    <Button xmlns="sap.m" text="Button" id="button2"/>
+				    <Button xmlns="sap.m" text="Button" id="button1"/>
+				    <sap.ui.comp.smarttable:SmartTable width="100%" direction="Column" fitContainer="true" tableType="ResponsiveTable" header="Smart Table" enableAutoBinding="true" xmlns:sap.ui.comp.smarttable="sap.ui.comp.smarttable" id="smartTable"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
