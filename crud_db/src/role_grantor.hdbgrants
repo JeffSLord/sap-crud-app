@@ -1,0 +1,10 @@
+{
+	"ROLE_GRANTOR_UPS": {
+		"object_owner": {
+			"system_privileges": ["ROLE ADMIN"]
+		},
+		"application_user": {
+			"system_privileges": ["ROLE ADMIN"]
+		}
+	}
+}

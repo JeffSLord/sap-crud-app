@@ -1,0 +1,8 @@
+{
+	"role": {
+		"name": "access_test",
+		"schema_privileges": [{
+			"privileges": ["SELECT"]
+		}]
+	}
+}

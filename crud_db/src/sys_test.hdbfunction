@@ -1,0 +1,11 @@
+FUNCTION "sys_test"( )
+       RETURNS TABLE ("DUMMY" VARCHAR(64))
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+    /*****************************
+        Write your function logic
+    ****************************/
+    var_out = SELECT * FROM "DUMMY";
+    return :var_out;
+END;

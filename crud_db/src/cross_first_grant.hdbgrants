@@ -1,0 +1,12 @@
+{
+	"hdi_cross_container_1st_db": {
+		"object_owner": {
+			"container_roles": [
+				"access#"
+			]
+		},
+		"application_user": {
+			"container_roles": ["access"]
+		}
+	}
+}

@@ -1,6 +1,5 @@
+@OData.publish : true
 context tables {
-
-    /*@@layout{"layoutInfo":{"x":-334,"y":-163.5}}*/
     entity students {
         key ID     : Integer not null;
             NAME   : String(100);

@@ -1,0 +1,27 @@
+FUNCTION "funct"( )
+       RETURNS  TABLE ("ID" Integer,"NAME" nvarchar(100),"SITE" nvarchar(100))
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+    /*****************************
+        Write your function logic
+    ****************************/
+    var_out = 
+    	with ccu as 
+    	(
+    		select ID, NAME, SITE
+    		from "tables.students"
+    	),
+    	cch as(
+    		select ID, NAME, SITE
+    		from ccu
+    	),
+    	ccl as(
+    		select ID, NAME, SITE
+    		from cch
+    	)
+    	SELECT ID, NAME, SITE 
+    	FROM ccl;
+    	
+    	return :var_out;
+END;

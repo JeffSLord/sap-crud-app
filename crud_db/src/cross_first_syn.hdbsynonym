@@ -1,0 +1,22 @@
+{
+  "CV_BASE": {
+    "target": {
+      "object": "CV_BASE",
+      "schema": "CROSS_CONTAINER_1ST_DB"
+    }
+  },
+  "CV_MASK": {
+    "target": {
+      "object": "CV_MASK",
+      "schema": "CROSS_CONTAINER_1ST_DB",
+      "database": "HDB"
+    }
+  },
+  "v_mask": {
+    "target": {
+      "object": "v_mask",
+      "schema": "CROSS_CONTAINER_1ST_DB",
+      "database": "HDB"
+    }
+  }
+}

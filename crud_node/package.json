@@ -8,7 +8,8 @@
 		"@sap/hdbext": "latest",
 		"passport": "latest",
 		"@sap/xssec": "latest",
-		"@sap/logging": "latest"
+		"@sap/logging": "latest",
+		"@sap/audit-logging": "latest"
 	},
 	"description": "my description",
 	"devDependencies": {
